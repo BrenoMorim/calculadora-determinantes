@@ -1,0 +1,30 @@
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}	
+.cabecalho {
+    background-color: #222;
+    color: #FFF;
+    padding: 1em;
+}
+.matriz input {
+    border: 2px #222 solid;
+    padding: 5px 10px;
+    height: 3.6em;
+    width: 3.6em;
+    font-size: 24px;
+}
+body {
+    margin-bottom: 5%;
+}
+@media screen and (max-width: 480px) {
+    body {
+        margin: 0 0 5% 0;
+    }
+    .container {
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+    }	
+}

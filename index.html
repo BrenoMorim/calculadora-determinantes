@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Calculadora de Determinante</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <div>
+            <header class="cabecalho container">
+                <h1 class="titulo">Calculadora de Determinantes</h1>
+                <h2 class="subtitulo">Suporte a matrizes de ordem 2 a 6</h2>
+            </header>
+            <main class="container">
+                <section class="dois mt-3">
+                    <h3>Ordem 2:</h3>
+                    <form id="matriz2">
+                    <table class="matriz">
+                        <tr>
+                            <td><input type="number" name="a11" id="a11" required placeholder="a11"/></td>
+                            <td><input type="number" name="a12" id="a12" required placeholder="a12"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" name="a21" id="a21" required placeholder="a21"/></td>
+                            <td><input type="number" name="a22" id="a22" required placeholder="a22"/></td>
+                        </tr>
+                    </table>
+                    <h4 class="mt-3">Determinante: <span id="det">__</span></h4>
+                    <input class="btn btn-primary mt-3" type="submit" value="Calcular Determinante" id="calcular2"/>
+                <input class="limpar btn btn-info mt-3 ms-3" type="button" value="Limpar Formulário"/>
+              </form>
+            </section>
+            <section class="tres mt-3">
+                <h3>Ordem 3:</h3>
+                <form id="matriz3">
+                <table class="matriz">
+                    <tr>
+                        <td><input type="number" name="a11" id="a11" required placeholder="a11"/></td>
+                        <td><input type="number" name="a12" id="a12" required placeholder="a12"/></td>
+                        <td><input type="number" name="a13" id="a13" required placeholder="a13"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="a21" id="a21" required placeholder="a21"/></td>
+                        <td><input type="number" name="a22" id="a22" required placeholder="a22"/></td>
+                        <td><input type="number" name="a23" id="a23" required placeholder="a23"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="a31" id="a31" required placeholder="a31"/></td>
+                        <td><input type="number" name="a32" id="a32" required placeholder="a32"/></td>
+                        <td><input type="number" name="a33" id="a33" required placeholder="a33"/></td>
+                    </tr>
+                </table>
+                <h4 class="mt-3">Determinante: <span id="det">__</span></h4>
+                <input class="btn btn-success mt-3" type="submit" value="Calcular Determinante" id="calcular3"/>
+                    <input class="limpar btn btn-info mt-3 ms-3" type="button" value="Limpar Formulário"/>
+                </form>
+            </section>
+            <section class="quatro mt-3">
+                <h3>Ordem 4:</h3>
+                <form id="matriz4">
+                <table class="matriz">
+                    <tr>
+                        <td><input type="number" name="a11" id="a11" required placeholder="a11"/></td>
+                        <td><input type="number" name="a12" id="a12" required placeholder="a12"/></td>
+                        <td><input type="number" name="a13" id="a13" required placeholder="a13"/></td>
+                        <td><input type="number" name="a14" id="a14" required placeholder="a14"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="a21" id="a21" required placeholder="a21"/></td>
+                        <td><input type="number" name="a22" id="a22" required placeholder="a22"/></td>
+                        <td><input type="number" name="a23" id="a23" required placeholder="a23"/></td>
+                        <td><input type="number" name="a24" id="a24" required placeholder="a24"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="a31" id="a31" required placeholder="a31"/></td>
+                        <td><input type="number" name="a32" id="a32" required placeholder="a32"/></td>
+                        <td><input type="number" name="a33" id="a33" required placeholder="a33"/></td>
+                        <td><input type="number" name="a34" id="a34" required placeholder="a34"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="a41" id="a41" required placeholder="a41"/></td>
+                        <td><input type="number" name="a42" id="a42" required placeholder="a42"/></td>
+                        <td><input type="number" name="a43" id="a43" required placeholder="a43"/></td>
+                        <td><input type="number" name="a44" id="a44" required placeholder="a44"/></td>
+                    </tr>
+                </table>
+                <h4 class="mt-3">Determinante: <span id="det">__</span></h4>
+                <input class="btn btn-warning mt-3" type="submit" value="Calcular Determinante" id="calcular4"/>
+                    <input class="limpar btn btn-info mt-3 ms-3" type="button" value="Limpar Formulário"/>
+               </form>
+            </section>
+            <section class="cinco mt-3">
+                <h3>Ordem 5:</h3>
+                <form id="matriz5">
+                <table class="matriz">
+                    <tr>
+                        <td><input type="number" name="a11" id="a11" required placeholder="a11"/></td>
+                        <td><input type="number" name="a12" id="a12" required placeholder="a12"/></td>
+                        <td><input type="number" name="a13" id="a13" required placeholder="a13"/></td>
+                        <td><input type="number" name="a14" id="a14" required placeholder="a14"/></td>
+                        <td><input type="number" name="a15" id="a15" required placeholder="a15"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="a21" id="a21" required placeholder="a21"/></td>
+                        <td><input type="number" name="a22" id="a22" required placeholder="a22"/></td>
+                        <td><input type="number" name="a23" id="a23" required placeholder="a23"/></td>
+                        <td><input type="number" name="a24" id="a24" required placeholder="a24"/></td>
+                        <td><input type="number" name="a25" id="a25" required placeholder="a25"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="a31" id="a31" required placeholder="a31"/></td>
+                        <td><input type="number" name="a32" id="a32" required placeholder="a32"/></td>
+                        <td><input type="number" name="a33" id="a33" required placeholder="a33"/></td>
+                        <td><input type="number" name="a34" id="a34" required placeholder="a34"/></td>
+                        <td><input type="number" name="a35" id="a35" required placeholder="a35"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="a41" id="a41" required placeholder="a41"/></td>
+                        <td><input type="number" name="a42" id="a42" required placeholder="a42"/></td>
+                        <td><input type="number" name="a43" id="a43" required placeholder="a43"/></td>
+                        <td><input type="number" name="a44" id="a44" required placeholder="a44"/></td>
+                        <td><input type="number" name="a45" id="a45" required placeholder="a45"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="a51" id="a51" required placeholder="a51"/></td>
+                        <td><input type="number" name="a52" id="a52" required placeholder="a52"/></td>
+                        <td><input type="number" name="a53" id="a53" required placeholder="a53"/></td>
+                        <td><input type="number" name="a54" id="a54" required placeholder="a54"/></td>
+                        <td><input type="number" name="a55" id="a55" required placeholder="a55"/></td>
+                    </tr>
+                </table>
+                <h4 class="mt-3">Determinante: <span id="det">__</span></h4>
+                <input class="btn btn-danger mt-3" type="submit" value="Calcular Determinante" id="calcular5"/>
+                <input class="limpar btn btn-info mt-3 ms-3" type="button" value="Limpar Formulário"/>
+              </form>
+			</section>
+            <section class="seis mt-3">
+                <h3>Ordem 6:</h3>
+                <form id="matriz6">
+                <table class="matriz">
+                    <tr>
+                        <td><input type="number" name="a11" id="a11" required placeholder="a11"/></td>
+                        <td><input type="number" name="a12" id="a12" required placeholder="a12"/></td>
+                        <td><input type="number" name="a13" id="a13" required placeholder="a13"/></td>
+                        <td><input type="number" name="a14" id="a14" required placeholder="a14"/></td>
+                        <td><input type="number" name="a15" id="a15" required placeholder="a15"/></td>
+                        <td><input type="number" name="a16" id="a16" required placeholder="a16"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="a21" id="a21" required placeholder="a21"/></td>
+                        <td><input type="number" name="a22" id="a22" required placeholder="a22"/></td>
+                        <td><input type="number" name="a23" id="a23" required placeholder="a23"/></td>
+                        <td><input type="number" name="a24" id="a24" required placeholder="a24"/></td>
+                        <td><input type="number" name="a25" id="a25" required placeholder="a25"/></td>
+                        <td><input type="number" name="a26" id="a26" required placeholder="a26"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="a31" id="a31" required placeholder="a31"/></td>
+                        <td><input type="number" name="a32" id="a32" required placeholder="a32"/></td>
+                        <td><input type="number" name="a33" id="a33" required placeholder="a33"/></td>
+                        <td><input type="number" name="a34" id="a34" required placeholder="a34"/></td>
+                        <td><input type="number" name="a35" id="a35" required placeholder="a35"/></td>
+                        <td><input type="number" name="a36" id="a36" required placeholder="a36"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="a41" id="a41" required placeholder="a41"/></td>
+                        <td><input type="number" name="a42" id="a42" required placeholder="a42"/></td>
+                        <td><input type="number" name="a43" id="a43" required placeholder="a43"/></td>
+                        <td><input type="number" name="a44" id="a44" required placeholder="a44"/></td>
+                        <td><input type="number" name="a45" id="a45" required placeholder="a45"/></td>
+                        <td><input type="number" name="a46" id="a46" required placeholder="a46"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="a51" id="a51" required placeholder="a51"/></td>
+                        <td><input type="number" name="a52" id="a52" required placeholder="a52"/></td>
+                        <td><input type="number" name="a53" id="a53" required placeholder="a53"/></td>
+                        <td><input type="number" name="a54" id="a54" required placeholder="a54"/></td>
+                        <td><input type="number" name="a55" id="a55" required placeholder="a55"/></td>
+                        <td><input type="number" name="a56" id="a56" required placeholder="a56"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="a61" id="a61" required placeholder="a61"/></td>
+                        <td><input type="number" name="a62" id="a62" required placeholder="a62"/></td>
+                        <td><input type="number" name="a63" id="a63" required placeholder="a63"/></td>
+                        <td><input type="number" name="a64" id="a64" required placeholder="a64"/></td>
+                        <td><input type="number" name="a65" id="a65" required placeholder="a65"/></td>
+                        <td><input type="number" name="a66" id="a66" required placeholder="a66"/></td>
+                    </tr>
+                </table>
+                <h4 class="mt-3">Determinante: <span id="det">__</span></h4>
+                <input class="btn btn-dark mt-3" type="submit" value="Calcular Determinante" id="calcular6"/>
+                <input class="limpar btn btn-info mt-3 ms-3" type="button" value="Limpar Formulário"/>
+                </form>
+			</section>
+			</main>
+        </div>
+        <script src="./js/calculos.js"></script>
+        <script src="./js/limparFormularios.js"></script>
+    </body>
+</html>
