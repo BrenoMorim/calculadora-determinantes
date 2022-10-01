@@ -6,17 +6,41 @@
 .cabecalho {
     background-color: #222;
     color: #FFF;
-    padding: 1em;
+    padding: 1rem;
 }
 .matriz input {
     border: 2px #222 solid;
-    padding: 5px 10px;
-    height: 3.6em;
-    width: 3.6em;
-    font-size: 24px;
+    padding: 5px;
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+}
+.matriz input::placeholder {
+    font-size: 1rem;
 }
 body {
     margin-bottom: 5%;
+}
+.matrizes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+    row-gap: 1.2rem;
+}
+.matrizes section, .matrizes form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.matrizes section {
+    width: 100%;
+}
+@media screen and (min-width: 1240px) {
+    .matrizes section {
+        width: 50%;
+    }
 }
 @media screen and (max-width: 480px) {
     body {
@@ -26,5 +50,18 @@ body {
         width: 95%;
         height: 100%;
         margin: 0 auto;
-    }	
+    }
+    .matriz input {
+        width: 3.2rem;
+        height: 3.2rem;
+        padding: 2px;
+        font-size: 1.2rem;
+    }
+    .matriz input::placeholder {
+        font-size: 0.8rem;
+    }
+    .calcular::content, .limpar::content {
+        font-size: .8rem;
+        padding: 3px;
+    }
 }
