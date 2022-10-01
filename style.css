@@ -13,10 +13,10 @@
     padding: 5px;
     height: 4rem;
     width: 4rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .matriz input::placeholder {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 body {
     margin-bottom: 5%;
@@ -37,7 +37,7 @@ body {
 .matrizes section {
     width: 100%;
 }
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 1000px) {
     .matrizes section {
         width: 50%;
     }
