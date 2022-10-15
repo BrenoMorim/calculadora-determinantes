@@ -10,7 +10,7 @@ Projeto simples com html, css e js puros para calcular o determinante de matrize
 | :label: Tecnologias | JavaScript, HTML, CSS
 | :rocket: URL         | https://brenomorim.github.io/calculadora-determinantes/
 
-![](https://github.com/BrenoMorim/calculadora-determinantes/blob/main/imagem-do-projeto.png#vitrinedev)
+![](https://github.com/BrenoMorim/calculadora-determinantes/blob/main/imagem-do-projeto.png?raw=true#vitrinedev)
 
 ## Detalhes do Projeto
 
